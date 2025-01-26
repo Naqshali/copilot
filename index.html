@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="" />
+    <meta name="googlebot" content="" />
+    <!--- Basic Page Needs
+        ================================================== -->
+    <title>Copilot Network</title>
+    <!-- Mobile Specific Meta
+        ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Fav Icon
+        ================================================== -->
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- CSS
+        ================================================== -->
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+    <!-- Header
+    ================================================== -->
+    <header class="Header">
+        <div class="Wrapper">
+            <img src="img/logo.png" alt="logo">
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Slider Section
+    ================================================== -->
+    <section class="SliderSection">
+        <div class="SliderLeft">
+            <!-- --------------- Arrow Button ---------------- -->
+            <div class="Arrowbtn">
+                <button class="prev" onclick="prevSlide()"><img src="img/arrow_up.png" alt="Up"></button>
+                <button class="next" onclick="nextSlide()"><img src="img/arrow_down.png" alt="Down"></button>
+            </div>
+            <!-- ------------------- Icon -------------------- -->
+            <div id="IconList" class="SliderIcon">
+                <div class="IconBox active" data-index="0">
+                    <span class="Dot"><span></span></span>
+                    <div class="icon"><img src="img/icon_agrivoltics_small.png" alt="Icon"></div>
+                    <span>Agrivoltaics</span>
+                </div>
+                <div class="IconBox" data-index="1">
+                    <span class="Dot"><span></span></span>
+                    <div class="icon"><img src="img/icon_telecom_small.png" alt="Icon"></div>
+                    <span>Telecom</span>
+                </div>
+                <div class="IconBox" data-index="2">
+                    <span class="Dot"><span></span></span>
+                    <div class="icon"><img src="img/icon_energy_small.png" alt="Icon"></div>
+                    <span>Energy & Utilities</span>
+                </div>
+                <div class="IconBox" data-index="3">
+                    <span class="Dot"><span></span></span>
+                    <div class="icon"><img src="img/icon_enterprise_small.png" alt="Icon"></div>
+                    <span>Enterprise & Retail</span>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------ Slider ------------------- -->
+        <div id="slider" class="slider">
+            <!-- ------------------ Slide 1 ------------------ -->
+            <div class="slide">
+                <div class="Content">
+                    <img src="img/icon_agrivoltics_large.png" alt="Icon">
+                    <div class="Text">
+                        <h1>Agrivoltaics</h1>
+                        <p>Your Trusted Partner for Comprehensive Network Solutions</p>
+                    </div>
+                </div>
+                <img src="img/agrivoltaics.png" alt="Agrivoltaics">
+            </div>
+            <!-- ------------------ Slide 2 ------------------ -->
+            <div class="slide">
+                <div class="Content">
+                    <img src="img/icon_telecom_large.png" alt="Icon">
+                    <div class="Text">
+                        <h1>Telecom</h1>
+                        <p>Your Trusted Partner for Comprehensive Network Solutions</p>
+                    </div>
+                </div>
+                <img src="img/telecom.png" alt="Telecom">
+            </div>
+            <!-- ------------------ Slide 3 ------------------ -->
+            <div class="slide">
+                <div class="Content">
+                    <img src="img/icon_energy_large.png" alt="Icon">
+                    <div class="Text">
+                        <h1>Energy & Utilities</h1>
+                        <p>Your Trusted Partner for Comprehensive Network Solutions</p>
+                    </div>
+                </div>
+                <img src="img/energy.png" alt="Energy">
+            </div>
+            <!-- ------------------ Slide 4 ------------------ -->
+            <div class="slide">
+                <div class="Content">
+                    <img src="img/icon_energy_large.png" alt="Icon">
+                    <div class="Text">
+                        <h1>Enterprise & Retail</h1>
+                        <p>Your Trusted Partner for Comprehensive Network Solutions</p>
+                    </div>
+                </div>
+                <img src="img/enterprise.png" alt="Enterprise">
+            </div>
+        </div>
+
+    </section>
+    <!-- Map Section
+    ================================================== -->
+    <section class="MapSection">
+        <div class="Wrapper">
+            <div class="Heading">
+                <h2>Project Heat Map</h2>
+                <p>Headquarters <span>- Dallax, TX</span></p>
+                <span class="TagLine">(Local Presence in every region of the US)</span>
+            </div>
+            <img src="img/map.png" alt="Map">
+            <div class="Content">
+                <div class="Value">
+                    <div class="Text">
+                        <h3>160</h3>
+                        <p>OSP/ISP <br>Engineers</p>
+                    </div>
+                    <div class="Text">
+                        <h3>42</h3>
+                        <p>Field Engineer & <br>Inspectors</p>
+                    </div>
+                </div>
+                <div class="Right">
+                    <h3>Proficiencies</h3>
+                    <ul>
+                        <li>&#9679; AutoCAD</li>
+                        <li>&#9679; SPIDA CALC </li>
+                        <li>&#9679; 3-GIS</li>
+                        <li>&#9679; GE SMALL WORLD</li>
+                        <li>&#9679; QGIS</li>
+                        <li>&#9679; ARAMIS DT</li>
+                        <li>&#9679; BENTLEY</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="Wrapper">
+        <!-- Telecom Section
+        ================================================== -->
+        <section class="TelecomSection">
+            <h2>Telecom</h2>
+            <div class="Content">
+                <div class="Left">
+                    <h3>Broband</h3>
+                    <ul>
+                        <li>Consulting & Grant Application</li>
+                        <li>Engineering GS Design</li>
+                        <li>Construction</li>
+                        <li>Product Procurment & Logistics</li>
+                        <li>Software</li>
+                        <li>RUSBILL, OSS, BSS, MELBEY</li>
+                    </ul>
+                </div>
+                <div class="Right">
+                    <h3>Mobility</h3>
+                    <ul>
+                        <li>Consulting & Grant Application</li>
+                        <li>Architectural Engineering & RF</li>
+                        <li>Site Acquisition</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Partnership Section
+        ================================================== -->
+        <section class="PartnershipSection">
+            <h2>What Partnership Means To Us</h2>
+            <div class="Cards">
+                <!-- ------------------ Card 1 ------------------- -->
+                <div class="CardBox">
+                    <div class="Heading">
+                        <img src="img/logo_tds.png" alt="Logo">
+                        <div class="Text">
+                            <h3>TDS</h3>
+                            <p>OPS Engineer</p>
+                        </div>
+                    </div>
+                    <span><b>2024</b></span>
+                    <p>
+                        Nitin, great work! No issues were found. Your use of 1x8's and 1x4's is exactly what we are
+                        looking for at TDS.
+                    </p>
+                    <span><b>MILEAGE</b> 110 miles</span>
+                    <span><b>SCOPE:</b> Design, Survey, and Permit/Colocation</span>
+                </div>
+                <!-- ------------------ Card 2 ------------------- -->
+                <div class="CardBox">
+                    <div class="Heading">
+                        <img src="img/logo_tds.png" alt="Logo">
+                        <div class="Text">
+                            <h3>TDS</h3>
+                            <p>Network Specialist</p>
+                        </div>
+                    </div>
+                    <span><b>2024</b></span>
+                    <p>
+                        I really enjoyed working with you guys. From what I have seen of all the vendors that we work
+                        with, you guys are the best!
+                    </p>
+                    <span><b>MILEAGE</b> 150 miles</span>
+                    <span><b>SCOPE:</b> Design, Survey, and Permit/Colocation</span>
+                </div>
+                <!-- ------------------ Card 3 ------------------- -->
+                <div class="CardBox">
+                    <div class="Heading">
+                        <img src="img/logo_tds.png" alt="Logo">
+                        <div class="Text">
+                            <h3>Ziply Fiber</h3>
+                            <p>Director of Engineering</p>
+                        </div>
+                    </div>
+                    <span><b>2024</b></span>
+                    <p>
+                        First, I want to thank you for your feedback as we launch the COMSOF to IQGEO process. It has
+                        been one of the best types of feedback I have received to date.
+                    </p>
+                    <span><b>MILEAGE</b> 325 miles</span>
+                    <span><b>SCOPE:</b> Design Updates and Corrections</span>
+                </div>
+                <!-- ------------------ Card 4 ------------------- -->
+                <div class="CardBox">
+                    <div class="Heading">
+                        <img src="img/logo_tds.png" alt="Logo">
+                        <div class="Text">
+                            <h3>GLO Fiber</h3>
+                            <p>OSP Engineer</p>
+                        </div>
+                    </div>
+                    <span><b>2024</b></span>
+                    <p>
+                        Super pleased with Copilot! The amount of involvement Copilot offers is what makes you guys
+                        stand out!
+                    </p>
+                    <span><b>MILEAGE</b> 160 miles</span>
+                    <span><b>SCOPE:</b> Design, Survey, Permit Designs and Apps, Pole Loading as needed</span>
+                </div>
+                <!-- ------------------ Card 5 ------------------- -->
+                <div class="CardBox">
+                    <div class="Heading">
+                        <img src="img/logo_tds.png" alt="Logo">
+                        <div class="Text">
+                            <h3>TDS</h3>
+                            <p>Network Specialist</p>
+                        </div>
+                    </div>
+                    <span><b>2024</b></span>
+                    <p>
+                        I really enjoyed working with you guys. From what I have seen of all the vendors that we work
+                        with, you guys are the best!
+                    </p>
+                    <span><b>MILEAGE</b> 150 miles</span>
+                    <span><b>SCOPE:</b> Design, Survey, and Permit/Colocation</span>
+                </div>
+                <!-- ------------------ Card 6 ------------------- -->
+                <div class="CardBox">
+                    <div class="Heading">
+                        <img src="img/logo_tds.png" alt="Logo">
+                        <div class="Text">
+                            <h3>Ziply Fiber</h3>
+                            <p>Director of Engineering</p>
+                        </div>
+                    </div>
+                    <span><b>2024</b></span>
+                    <p>
+                        First, I want to thank you for your feedback as we launch the COMSOF to IQGEO process. It has
+                        been one of the best types of feedback I have received to date.
+                    </p>
+                    <span><b>MILEAGE</b> 325 miles</span>
+                    <span><b>SCOPE:</b> Design Updates and Corrections</span>
+                </div>
+            </div>
+            <div class="Button">
+                <a href="#">Show More</a>
+            </div>
+        </section>
+    </div>
+    <!-- Trusted Section
+    ================================================== -->
+    <section class="TrustedSection">
+        <div class="Wrapper">
+            <h2>Trusted By:</h2>
+            <div class="Logo">
+                <img src="img/logo_luma.png" alt="Logo">
+                <img src="img/logo_tds2.png" alt="Logo">
+                <img src="img/logo_at.png" alt="Logo">
+                <img src="img/logo_verizon.png" alt="Logo">
+                <img src="img/logo_points.png" alt="Logo">
+                <img src="img/logo_wow.png" alt="Logo">
+                <img src="img/logo_comcast.png" alt="Logo">
+                <img src="img/logo_xfinty.png" alt="Logo">
+                <img src="img/logo_glofiber.png" alt="Logo">
+                <img src="img/logo_cox.png" alt="Logo">
+                <img src="img/logo_american.png" alt="Logo">
+                <img src="img/logo_rise.png" alt="Logo">
+                <img src="img/logo_edison.png" alt="Logo">
+                <img src="img/logo_brightspeed.png" alt="Logo">
+            </div>
+        </div>
+    </section>
+    <!-- Trusted Section
+    ================================================== -->
+    <div class="Wrapper">
+        <section class="FeedSection">
+            <h2><b>LIVE</b> Linkedin Feed</h2>
+            <div class="Post">
+                <img src="img/feed_1.png" alt="Post">
+                <img src="img/feed_2.png" alt="Post">
+                <img src="img/feed_3.png" alt="Post">
+            </div>
+        </section>
+    </div>
+    <!-- Footer
+    ================================================== -->
+    <footer class="Footer">
+        <div class="Wrapper">
+            <div class="Heading">
+                <h1>
+                    We Value
+                    <a href="#">Partnerships</a>
+                    over
+                    <a href="#">Purchase Orders</a>
+                </h1>
+                <a class="Link" href="#">Become a Partner</a>
+            </div>
+            <div class="SocialIcon">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg width="14" height="13" viewBox="0 0 14 13">
+                                <path
+                                    d="M10.5721 12.3847C10.5721 10.9359 10.578 9.51227 10.5673 8.08877C10.5651 7.79431 10.5325 7.49244 10.4599 7.20766C10.1499 5.99061 8.79291 6.06818 8.24096 6.62139C7.89911 6.964 7.74358 7.36444 7.74685 7.84976C7.75615 9.25502 7.74861 10.6604 7.74773 12.0657C7.74773 12.1663 7.74773 12.2669 7.74773 12.387H5.05261V4.31754H7.72925V5.4193C7.89194 5.22744 8.0144 5.08486 8.13497 4.94052C9.2219 3.63936 12.3586 3.67519 13.0665 6.2481C13.198 6.73233 13.2688 7.23102 13.2774 7.7327C13.3043 9.23101 13.2872 10.7299 13.2866 12.2288C13.2866 12.2738 13.2785 12.3189 13.2722 12.3849L10.5721 12.3847Z" />
+                                <path d="M0.867432 12.3833V4.31262H3.5374V12.3833H0.867432Z" />
+                                <path
+                                    d="M0.707489 1.79243C0.708244 0.95709 1.33827 0.379368 2.24025 0.387163C3.10777 0.394707 3.74132 0.997198 3.73956 1.8133C3.7378 2.60816 3.08816 3.19632 2.20316 3.20449C1.33462 3.21241 0.706861 2.6196 0.707489 1.79243Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="6" height="13" viewBox="0 0 6 13">
+                                <mask id="path-1-inside-1_49_648">
+                                    <path
+                                        d="M5.63043 4.35641L5.42188 6.41102C5.02936 6.41102 4.6606 6.41102 4.29197 6.41042C4.25021 6.41042 4.20869 6.3995 4.16681 6.39662C3.88085 6.37706 3.85661 6.4037 3.85697 6.68798C3.85929 8.53596 3.86053 10.3842 3.86069 12.2326C3.86069 12.2806 3.85517 12.3276 3.85145 12.3871H1.5218C1.517 12.3074 1.5098 12.2402 1.5098 12.173C1.50916 10.4578 1.5094 8.7426 1.51052 7.02734C1.51052 6.89534 1.52816 6.76226 1.53452 6.62966C1.54196 6.46826 1.48148 6.38883 1.30088 6.3965C0.994521 6.40946 0.687205 6.4001 0.369568 6.4001V4.37525C0.682525 4.37525 0.968482 4.36948 1.2542 4.37728C1.4462 4.38256 1.51916 4.32161 1.5182 4.11221C1.51724 3.55301 1.496 2.98698 1.57268 2.43618C1.72999 1.30664 2.21743 0.630923 3.46866 0.497844C4.16801 0.423085 4.87552 0.423085 5.60787 0.387085V2.46462C5.38252 2.46462 5.18068 2.45682 4.97968 2.46654C4.72228 2.47854 4.46369 2.49162 4.20941 2.53074C4.03601 2.55738 3.91925 2.68578 3.91097 2.86542C3.88985 3.31926 3.88217 3.77369 3.87149 4.22801C3.86753 4.39672 3.99797 4.36601 4.09661 4.36589C4.52357 4.36529 4.95064 4.35989 5.3776 4.35641C5.45284 4.35581 5.52796 4.35641 5.63043 4.35641Z" />
+                                </mask>
+                                <path
+                                    d="M5.63043 4.35641L5.42188 6.41102C5.02936 6.41102 4.6606 6.41102 4.29197 6.41042C4.25021 6.41042 4.20869 6.3995 4.16681 6.39662C3.88085 6.37706 3.85661 6.4037 3.85697 6.68798C3.85929 8.53596 3.86053 10.3842 3.86069 12.2326C3.86069 12.2806 3.85517 12.3276 3.85145 12.3871H1.5218C1.517 12.3074 1.5098 12.2402 1.5098 12.173C1.50916 10.4578 1.5094 8.7426 1.51052 7.02734C1.51052 6.89534 1.52816 6.76226 1.53452 6.62966C1.54196 6.46826 1.48148 6.38883 1.30088 6.3965C0.994521 6.40946 0.687205 6.4001 0.369568 6.4001V4.37525C0.682525 4.37525 0.968482 4.36948 1.2542 4.37728C1.4462 4.38256 1.51916 4.32161 1.5182 4.11221C1.51724 3.55301 1.496 2.98698 1.57268 2.43618C1.72999 1.30664 2.21743 0.630923 3.46866 0.497844C4.16801 0.423085 4.87552 0.423085 5.60787 0.387085V2.46462C5.38252 2.46462 5.18068 2.45682 4.97968 2.46654C4.72228 2.47854 4.46369 2.49162 4.20941 2.53074C4.03601 2.55738 3.91925 2.68578 3.91097 2.86542C3.88985 3.31926 3.88217 3.77369 3.87149 4.22801C3.86753 4.39672 3.99797 4.36601 4.09661 4.36589C4.52357 4.36529 4.95064 4.35989 5.3776 4.35641C5.45284 4.35581 5.52796 4.35641 5.63043 4.35641Z" />
+                                <path
+                                    d="M5.63043 4.35641L6.62532 4.45739L6.73708 3.35641H5.63043V4.35641ZM5.42188 6.41102V7.41102H6.32551L6.41676 6.51201L5.42188 6.41102ZM4.29197 6.41042L4.2936 5.41042H4.29197V6.41042ZM4.16681 6.39662L4.23542 5.39898L4.23505 5.39896L4.16681 6.39662ZM3.85697 6.68798L4.85697 6.68673L4.85697 6.68672L3.85697 6.68798ZM3.86069 12.2326L4.86069 12.2326L4.86069 12.2326L3.86069 12.2326ZM3.85145 12.3871V13.3871H4.7909L4.84951 12.4495L3.85145 12.3871ZM1.5218 12.3871L0.523606 12.4472L0.580224 13.3871H1.5218V12.3871ZM1.5098 12.173L2.5098 12.173L2.5098 12.1726L1.5098 12.173ZM1.51052 7.02734L2.51052 7.02799V7.02734H1.51052ZM1.53452 6.62966L2.53337 6.67757L2.53346 6.67571L1.53452 6.62966ZM1.30088 6.3965L1.34314 7.39561L1.34336 7.3956L1.30088 6.3965ZM0.369568 6.4001H-0.630432V7.4001H0.369568V6.4001ZM0.369568 4.37525V3.37525H-0.630432V4.37525H0.369568ZM1.2542 4.37728L1.28169 3.37766L1.28149 3.37766L1.2542 4.37728ZM1.5182 4.11221L0.518194 4.11392L0.518207 4.11679L1.5182 4.11221ZM1.57268 2.43618L0.582235 2.29824L0.582227 2.2983L1.57268 2.43618ZM3.46866 0.497844L3.57442 1.49224L3.57495 1.49218L3.46866 0.497844ZM5.60787 0.387085H6.60787V-0.663279L5.55878 -0.611709L5.60787 0.387085ZM5.60787 2.46462V3.46462H6.60787V2.46462H5.60787ZM4.97968 2.46654L5.02625 3.46546L5.02798 3.46538L4.97968 2.46654ZM4.20941 2.53074L4.36126 3.51915L4.36147 3.51912L4.20941 2.53074ZM3.91097 2.86542L4.90989 2.91191L4.90991 2.91146L3.91097 2.86542ZM3.87149 4.22801L2.87177 4.20451L2.87177 4.20454L3.87149 4.22801ZM4.09661 4.36589L4.09783 5.36588L4.09802 5.36588L4.09661 4.36589ZM5.3776 4.35641L5.36962 3.35644L5.36945 3.35644L5.3776 4.35641ZM4.63555 4.25542L4.42699 6.31004L6.41676 6.51201L6.62532 4.45739L4.63555 4.25542ZM5.42188 5.41102C5.02921 5.41102 4.66128 5.41102 4.2936 5.41043L4.29034 7.41042C4.65993 7.41103 5.02951 7.41102 5.42188 7.41102V5.41102ZM4.29197 5.41042C4.32452 5.41042 4.34944 5.41253 4.36272 5.41389C4.37515 5.41517 4.38253 5.41637 4.37614 5.41542C4.37482 5.41523 4.37323 5.41499 4.37075 5.41462C4.36862 5.41429 4.36519 5.41378 4.36191 5.41328C4.35518 5.41228 4.34518 5.4108 4.33383 5.40924C4.31148 5.40618 4.27675 5.40182 4.23542 5.39898L4.0982 7.39427C4.0778 7.39287 4.06397 7.39095 4.0625 7.39075C4.06157 7.39062 4.062 7.39068 4.0657 7.39123C4.06622 7.39131 4.0776 7.39302 4.08273 7.39378C4.10698 7.39738 4.19117 7.41042 4.29197 7.41042V5.41042ZM4.23505 5.39896C4.1665 5.39427 4.03493 5.3854 3.89958 5.39875C3.76066 5.41245 3.46955 5.4618 3.21506 5.70404C2.96247 5.94447 2.89845 6.23025 2.87737 6.36309C2.85662 6.49392 2.85689 6.62339 2.85697 6.68925L4.85697 6.68672C4.85688 6.61043 4.86004 6.62997 4.85267 6.67647C4.84497 6.72497 4.80481 6.95201 4.59398 7.15269C4.38125 7.35518 4.1498 7.38377 4.09584 7.38909C4.04545 7.39406 4.02414 7.3892 4.09857 7.39429L4.23505 5.39896ZM2.85697 6.68924C2.85929 8.53683 2.86053 10.3847 2.86069 12.2327L4.86069 12.2326C4.86053 10.3837 4.85929 8.5351 4.85697 6.68673L2.85697 6.68924ZM2.86069 12.2326C2.86069 12.2197 2.86144 12.2147 2.86014 12.2324C2.85938 12.2428 2.85881 12.2498 2.85742 12.2678C2.85623 12.2832 2.85477 12.3028 2.8534 12.3247L4.84951 12.4495C4.85102 12.4252 4.85159 12.4223 4.85479 12.3787C4.85718 12.3461 4.86069 12.2935 4.86069 12.2326H2.86069ZM3.85145 11.3871H1.5218V13.3871H3.85145V11.3871ZM2.51999 12.327C2.51841 12.3007 2.5167 12.2767 2.51526 12.2569C2.51368 12.2352 2.51267 12.2219 2.51167 12.2073C2.50978 12.1795 2.5098 12.1725 2.5098 12.173H0.509796C0.509796 12.2789 0.522584 12.4303 0.523606 12.4472L2.51999 12.327ZM2.5098 12.1726C2.50916 10.4578 2.5094 8.74291 2.51052 7.02799L0.510516 7.02669C0.509396 8.74229 0.509156 10.4579 0.509796 12.1734L2.5098 12.1726ZM2.51052 7.02734C2.51052 7.00257 2.51222 6.96877 2.51707 6.90694C2.52103 6.85649 2.52922 6.76397 2.53337 6.67757L0.535664 6.58175C0.533448 6.62795 0.529646 6.66828 0.523194 6.75051C0.517635 6.82137 0.510516 6.92011 0.510516 7.02734H2.51052ZM2.53346 6.67571C2.54125 6.50656 2.53448 6.10237 2.21652 5.76443C1.88588 5.41302 1.46427 5.38865 1.25839 5.39741L1.34336 7.3956C1.31808 7.39668 1.01701 7.40819 0.759906 7.13493C0.515472 6.87514 0.53522 6.59136 0.535577 6.58361L2.53346 6.67571ZM1.25861 5.3974C0.979739 5.4092 0.728477 5.4001 0.369568 5.4001V7.4001C0.645932 7.4001 1.0093 7.40973 1.34314 7.39561L1.25861 5.3974ZM1.36957 6.4001V4.37525H-0.630432V6.4001H1.36957ZM0.369568 5.37525C0.709689 5.37525 0.958889 5.3696 1.22691 5.37691L1.28149 3.37766C0.978075 3.36937 0.65536 3.37525 0.369568 3.37525V5.37525ZM1.22671 5.37691C1.3721 5.38091 1.80338 5.38309 2.15392 5.04391C2.50542 4.7038 2.51893 4.27063 2.51819 4.10762L0.518207 4.11679C0.518197 4.11473 0.51818 4.10133 0.52047 4.07951C0.522744 4.05786 0.527923 4.02173 0.540556 3.97607C0.567018 3.88042 0.62849 3.73693 0.763191 3.60659C0.89789 3.47626 1.0434 3.41947 1.13978 3.39598C1.18577 3.38477 1.22209 3.38063 1.24383 3.37896C1.26571 3.37727 1.27935 3.3776 1.28169 3.37766L1.22671 5.37691ZM2.51819 4.11049C2.51715 3.4993 2.49898 3.03483 2.56312 2.57407L0.582227 2.2983C0.493014 2.93913 0.517327 3.60673 0.518198 4.11392L2.51819 4.11049ZM2.56312 2.57413C2.6283 2.10609 2.74386 1.88285 2.8494 1.76709C2.93762 1.67035 3.11624 1.54097 3.57442 1.49224L3.36289 -0.496548C2.56984 -0.4122 1.87914 -0.137184 1.3715 0.419582C0.881186 0.957338 0.674368 1.63673 0.582235 2.29824L2.56312 2.57413ZM3.57495 1.49218C4.23868 1.42123 4.85673 1.42522 5.65697 1.38588L5.55878 -0.611709C4.89431 -0.579046 4.09734 -0.575059 3.36236 -0.496491L3.57495 1.49218ZM4.60787 0.387085V2.46462H6.60787V0.387085H4.60787ZM5.60787 1.46462C5.43501 1.46462 5.16318 1.4565 4.93138 1.46771L5.02798 3.46538C5.19818 3.45715 5.33002 3.46462 5.60787 3.46462V1.46462ZM4.93311 1.46763C4.68089 1.47939 4.37155 1.49403 4.05735 1.54237L4.36147 3.51912C4.55582 3.48921 4.76367 3.4777 5.02625 3.46546L4.93311 1.46763ZM4.05756 1.54234C3.41125 1.64163 2.94214 2.16617 2.91203 2.81938L4.90991 2.91146C4.90437 3.03163 4.85788 3.17995 4.74282 3.30827C4.62791 3.43643 4.48437 3.50023 4.36126 3.51915L4.05756 1.54234ZM2.91205 2.81893C2.89024 3.28774 2.88223 3.75935 2.87177 4.20451L4.87122 4.25151C4.88211 3.78803 4.88947 3.35077 4.90989 2.91191L2.91205 2.81893ZM2.87177 4.20454C2.86804 4.36335 2.89123 4.61115 3.04652 4.85613C3.21581 5.12321 3.45913 5.25808 3.65701 5.31772C3.82826 5.36933 3.97705 5.36859 4.02927 5.36807C4.06042 5.36776 4.08988 5.36646 4.09857 5.36611C4.11376 5.3655 4.10783 5.36587 4.09783 5.36588L4.09539 3.36589C4.06073 3.36593 4.02915 3.36729 4.01833 3.36772C4.00103 3.36842 4.00415 3.36822 4.00926 3.36817C4.0094 3.36817 4.10734 3.36458 4.23414 3.4028C4.38758 3.44904 4.59286 3.55997 4.73573 3.78536C4.8646 3.98865 4.87296 4.17702 4.87122 4.25147L2.87177 4.20454ZM4.09802 5.36588C4.52941 5.36528 4.96485 5.3598 5.38575 5.35637L5.36945 3.35644C4.93644 3.35997 4.51773 3.36529 4.0952 3.36589L4.09802 5.36588ZM5.38557 5.35637C5.45605 5.35581 5.5172 5.35641 5.63043 5.35641V3.35641C5.53871 3.35641 5.44962 3.3558 5.36962 3.35644L5.38557 5.35637Z"
+                                    mask="url(#path-1-inside-1_49_648)" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Item">
+                <div class="List">
+                    <img src="img/logo.png" alt="Logo">
+                    <p>
+                        Copilot Networks, a Unit of The Capital Group <br> 955 Garden Park Drive, #220, Allen, Texas,
+                        75013
+                    </p>
+                </div>
+                <div class="List">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="List">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Internet For All</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="List">
+                    <h3>Need Help?</h3>
+                    <ul>
+                        <li>Call Us: <br>(469) 929-3200</li>
+                        <li>General Enquiries: <br> <a href="#">Sales@CopilotNet.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Bottom">
+                <p>© 2024 Copilot Networks </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Custom Script
+    ================================================== -->
+    <script>
+        let currentIndex = 0;
+
+        function updateSlider() {
+            const slider = document.getElementById('slider');
+            const slideWidth = slider.clientWidth;
+            slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+            // Update active class for icons
+            const icons = document.querySelectorAll('.IconBox');
+            icons.forEach((icon, index) => {
+                if (index === currentIndex) {
+                    icon.classList.add('active');
+                    scrollToCenter(icon);  // Scroll to center the active icon
+                } else {
+                    icon.classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            const slider = document.getElementById('slider');
+            const totalSlides = slider.children.length;
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            const slider = document.getElementById('slider');
+            const totalSlides = slider.children.length;
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        function scrollToCenter(icon) {
+            const IconList = document.getElementById('IconList');
+            const iconTop = icon.offsetTop;
+            const iconHeight = icon.offsetHeight;
+            const containerHeight = IconList.clientHeight;
+
+            // Calculate the position to scroll to ensure the icon is vertically centered
+            const scrollPosition = iconTop - (containerHeight / 2) + (iconHeight / 2);
+            IconList.scrollTop = scrollPosition;
+        }
+
+        // Event listener for icons
+        const icons = document.querySelectorAll('.IconBox');
+        icons.forEach(icon => {
+            icon.addEventListener('click', (e) => {
+                currentIndex = parseInt(icon.getAttribute('data-index'), 10);
+                updateSlider();
+            });
+        });
+
+        window.addEventListener('resize', updateSlider);
+    </script>
+</body>
+
+</html>

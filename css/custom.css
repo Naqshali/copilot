@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+/*====================================================================================
+ZIA ULLAH
+======================================================================================*/
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-weight: 500;
+  overflow-x: hidden;
+  display: inline-block;
+  background-color: #fff;
+  font-family: "Inter", serif;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: all ease-in-out 0.2s !important;
+  -moz-transition: all ease-in-out 0.2s !important;
+  -ms-transition: all ease-in-out 0.2s !important;
+  -o-transition: all ease-in-out 0.2s !important;
+  -webkit-transition: all ease-in-out 0.2s !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  transition: all ease-in-out 0.2s !important;
+  -moz-transition: all ease-in-out 0.2s !important;
+  -ms-transition: all ease-in-out 0.2s !important;
+  -o-transition: all ease-in-out 0.2s !important;
+  -webkit-transition: all ease-in-out 0.2s !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #233354;
+}
+
+p {
+  color: #123143;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+button,
+input[type=submit] {
+  transition: all ease-in-out 0.2s !important;
+  -moz-transition: all ease-in-out 0.2s !important;
+  -ms-transition: all ease-in-out 0.2s !important;
+  -o-transition: all ease-in-out 0.2s !important;
+  -webkit-transition: all ease-in-out 0.2s !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+/*====================================================================================
+HOME PAGE
+======================================================================================*/
+.Wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.Header {
+  padding: 10px 0;
+  border-bottom: 2px solid #f3f9fc;
+}
+.Header .Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Header .Wrapper ul {
+  display: flex;
+  align-items: center;
+}
+.Header .Wrapper ul li {
+  padding-left: 30px;
+}
+.Header .Wrapper ul li a {
+  color: #7bafc4;
+  font-size: 14px;
+}
+.Header .Wrapper ul li a:hover {
+  color: #018dd0;
+}
+
+.SliderSection {
+  display: flex;
+  margin: 100px 0;
+  align-items: center;
+}
+.SliderSection .SliderLeft {
+  width: 30%;
+  z-index: 9;
+  display: flex;
+  padding: 0 20px;
+  position: relative;
+  align-items: center;
+  background-color: #fff;
+}
+.SliderSection .SliderLeft::before {
+  z-index: -1;
+  content: "";
+  width: 400px;
+  left: -150px;
+  height: 400px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #7bafc4;
+}
+.SliderSection .SliderLeft .Arrowbtn {
+  display: flex;
+  flex-direction: column;
+}
+.SliderSection .SliderLeft .Arrowbtn button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.SliderSection .SliderLeft .SliderIcon {
+  padding-left: 51px;
+}
+.SliderSection .SliderLeft .SliderIcon .IconBox {
+  display: flex;
+  padding: 40px 0;
+  align-items: center;
+}
+.SliderSection .SliderLeft .SliderIcon .IconBox.active .Dot {
+  border: 1px solid #7bafc4;
+}
+.SliderSection .SliderLeft .SliderIcon .IconBox:nth-child(2), .SliderSection .SliderLeft .SliderIcon .IconBox:nth-child(3) {
+  padding-left: 106px;
+}
+.SliderSection .SliderLeft .SliderIcon .IconBox .Dot {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.SliderSection .SliderLeft .SliderIcon .IconBox .Dot span {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50px;
+  background-color: #7bafc4;
+}
+.SliderSection .SliderLeft .SliderIcon .IconBox .icon {
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SliderSection .SliderLeft .SliderIcon .IconBox .icon img {
+  width: 30px;
+}
+.SliderSection .SliderLeft .SliderIcon .IconBox span {
+  color: #7bafc4;
+  font-size: 14px;
+}
+.SliderSection .slider {
+  width: 70%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.SliderSection .slider .slide {
+  display: flex;
+  flex: 0 0 100%;
+  align-items: center;
+  padding-right: 100px;
+  justify-content: space-between;
+}
+.SliderSection .slider .slide .Content {
+  width: 40%;
+  display: flex;
+  align-items: start;
+}
+.SliderSection .slider .slide .Content .Text {
+  padding-left: 20px;
+}
+.SliderSection .slider .slide .Content .Text h1 {
+  font-size: 40px;
+  color: #002235;
+  padding-bottom: 10px;
+}
+.SliderSection .slider .slide .Content .Text p {
+  font-size: 18px;
+  color: #002235;
+}
+
+.MapSection {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #012235;
+}
+.MapSection .Heading {
+  padding-bottom: 30px;
+}
+.MapSection .Heading h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.MapSection .Heading p {
+  color: #b8c1c6;
+  font-size: 20px;
+  font-weight: 500;
+}
+.MapSection .Heading p span {
+  color: #fff;
+  font-weight: 600;
+}
+.MapSection .Heading .TagLine {
+  display: block;
+  font-size: 12px;
+  color: #0095ac;
+}
+.MapSection .Content {
+  display: flex;
+  margin-top: -80px;
+  justify-content: space-between;
+}
+.MapSection .Content .Value .Text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MapSection .Content .Value .Text h3 {
+  width: 80px;
+  font-size: 32px;
+  color: #00e4fe;
+  text-align: right;
+}
+.MapSection .Content .Value .Text p {
+  width: 200px;
+  font-size: 12px;
+  color: #b8c1c6;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 10px;
+}
+.MapSection .Content .Right {
+  width: 270px;
+  text-align: left;
+}
+.MapSection .Content .Right h3 {
+  font-size: 22px;
+  color: #00dcf5;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.MapSection .Content .Right ul li {
+  font-size: 12px;
+  color: #b8c1c6;
+  font-weight: 400;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.TelecomSection {
+  padding: 100px 0;
+}
+.TelecomSection h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.TelecomSection .Content {
+  display: flex;
+}
+.TelecomSection .Content h3 {
+  font-size: 20px;
+}
+.TelecomSection .Content ul {
+  padding-top: 20px;
+}
+.TelecomSection .Content ul li {
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.TelecomSection .Content .Left,
+.TelecomSection .Content .Right {
+  width: 50%;
+  padding: 50px;
+}
+.TelecomSection .Content .Left {
+  margin-right: 40px;
+  background-color: #c8efff;
+}
+.TelecomSection .Content .Right {
+  background-color: #6ba5bd;
+}
+
+.PartnershipSection {
+  padding-bottom: 80px;
+}
+.PartnershipSection h2 {
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+.PartnershipSection .Cards {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.PartnershipSection .Cards .CardBox {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #f3f7fa;
+  border: 1px solid #cee1e8;
+}
+.PartnershipSection .Cards .CardBox .Heading {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.PartnershipSection .Cards .CardBox .Heading img {
+  border-radius: 50px;
+}
+.PartnershipSection .Cards .CardBox .Heading .Text {
+  padding-left: 10px;
+}
+.PartnershipSection .Cards .CardBox .Heading .Text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #013d55;
+}
+.PartnershipSection .Cards .CardBox .Heading .Text p {
+  font-size: 12px;
+  color: #a6b9c1;
+  font-weight: 400;
+  padding-bottom: 0;
+}
+.PartnershipSection .Cards .CardBox span {
+  display: block;
+  color: #6aa5bd;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+.PartnershipSection .Cards .CardBox p {
+  font-size: 16px;
+  color: #023d56;
+  padding-bottom: 15px;
+}
+.PartnershipSection .Button {
+  padding-top: 50px;
+  text-align: center;
+}
+.PartnershipSection .Button a {
+  color: #fff;
+  font-size: 12px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 1px solid #233354;
+  background-color: #233354;
+}
+.PartnershipSection .Button a:hover {
+  color: #233354;
+  background-color: transparent;
+}
+
+.TrustedSection {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f3f7fa;
+}
+.TrustedSection h2 {
+  font-size: 30px;
+  padding-bottom: 60px;
+}
+.TrustedSection .Logo {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  gap: 50px 70px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.FeedSection {
+  padding: 80px 0;
+}
+.FeedSection h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.FeedSection .Post {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.FeedSection .Post img {
+  width: 100%;
+}
+
+.Footer {
+  padding-top: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/footer.png);
+}
+.Footer .Heading {
+  text-align: center;
+}
+.Footer .Heading h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+.Footer .Heading h1 a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.Footer .Heading .Link {
+  font-size: 12px;
+  color: #233354;
+  padding: 18px 40px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+.Footer .Heading .Link:hover {
+  color: #fff;
+  background-color: transparent;
+}
+.Footer .SocialIcon {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  justify-content: right;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.Footer .SocialIcon h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.Footer .SocialIcon ul {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+}
+.Footer .SocialIcon ul li {
+  padding: 0 5px;
+}
+.Footer .SocialIcon ul li a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+  border: 1px solid #fff;
+}
+.Footer .SocialIcon ul li a svg path {
+  fill: #fff;
+}
+.Footer .Item {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  justify-content: space-between;
+}
+.Footer .Item .List {
+  width: 15%;
+}
+.Footer .Item .List:first-child {
+  width: 45%;
+}
+.Footer .Item .List p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+.Footer .Item .List h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.Footer .Item .List ul li {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.Footer .Item .List ul li a {
+  color: #fff;
+}
+.Footer .Bottom {
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.Footer .Bottom p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}/*# sourceMappingURL=custom.css.map */
